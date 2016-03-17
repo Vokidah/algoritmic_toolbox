@@ -21,14 +21,5 @@ def edit_distance(s, t):
                 result[i][j] = min(insertion, deletion, mismatch)
     return result[len(t)-1][len(s)-1]
 
-
-def min(a, b, c):
-    if a <=b and a <=c:
-        return a
-    if b <= a and b <= c:
-        return b
-    if c <= a and c <= b:
-        return c
-
 if __name__ == "__main__":
     print(edit_distance(input(), input()))
